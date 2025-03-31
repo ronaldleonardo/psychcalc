@@ -1,0 +1,433 @@
+/* src/App.css */
+
+body {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  /*  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );*/
+  /*  background: rgb(34, 193, 195);
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(228, 179, 75, 0.768580674457283) 100%
+  );*/
+
+  background-image:
+    linear-gradient(#ba9898 2px, transparent 2px),
+    linear-gradient(to right, #ba9898 2px, transparent 2px);
+  background-size: 43px 43px;
+  background-color: #f2f2df;
+}
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+h3 {
+  color: #333;
+}
+
+h4 {
+  text-align: center;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* src/App.css */
+.description {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #464646;
+  border-radius: 5px;
+}
+
+.severityLevel {
+  margin: 10px 0px 20px 0;
+  padding: 5px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* src/App.css */
+
+/* Sticky Progress Bar */
+.sticky-progress-bar {
+  position: sticky;
+  bottom: 10px;
+  z-index: 100;
+  padding: 10px;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.progress-bar-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 20px;
+  /*  background-color: #f8b72bc7;*/
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+
+.scoreSpan {
+  font-size: smaller;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
+/* Radio Button Styles */
+.radio-input {
+  display: none; /* Hide the radio button */
+}
+
+.option-label {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-label.selected {
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+.labelandscore {
+  display: flex;
+  justify-content: space-between; /* This is the key */
+  padding: 0 5px;
+}
+
+.exportButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.action-button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 30px;
+  transition: ease-in-out all 0.1s;
+  background: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.action-button:hover {
+  font-size: 35px;
+  padding: 5px 20px;
+}
+
+/* Print-specific styles */
+@media print {
+  @page {
+    size: A4; /* Set paper size to A4 */
+    margin: 0; /* Remove margins */
+  }
+
+  body {
+    margin: 0; /* Ensure no extra margin */
+    -webkit-print-color-adjust: exact; /* Force background colors and images to print */
+    print-color-adjust: exact; /* Standard property for printing backgrounds */
+  }
+
+  /* Hide headers or other elements you don't want to print */
+  header,
+  .no-print {
+    display: none;
+  }
+}
+
+/* src/App.css */
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(83, 83, 83, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align to the top of the viewport */
+  z-index: 1000;
+  overflow-y: clip; /*Change this to Allow scrolling if the modal is taller than the viewport */
+  overflow-x: clip;
+  margin: auto;
+  backdrop-filter: blur(5px);
+}
+
+.modal {
+  background: rgba(256, 256, 256, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 70vw;
+  text-align: center;
+  position: absolute; /* Position relative to the viewport */
+  transform: translateY(-50%);
+}
+
+.modal p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.confirm-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.confirm-button:hover {
+  background-color: #45a049;
+}
+
+.cancel-button {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+  background-color: #e53935;
+}
+
+/* Questionnaire Card Styles */
+.questionnaire-list {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.questionnaire-card {
+  background: rgba(256, 256, 256, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 67vw;
+  text-align: center;
+
+  /*
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: left;
+*/
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  display: grid;
+  justify-content: center;
+  margin: 20px;
+  justify-items: center;
+}
+
+.questionnaire-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.questionnaire-card h2 {
+  margin: 0 0 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.questionnaire-card p {
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.start-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #45a049;
+}
+
+/* Question Description Styles */
+.question-description {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #555;
+}
+
+.questions {
+  padding-bottom: 20px;
+}
+
+/*PANSS TABS*/
+.tabButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-button {
+  display: block;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 15px;
+  transition: ease-in-out all 0.1s;
+  background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin: 5px 5px;
+}
+
+.tab-button:hover {
+  font-size: 16px;
+  padding: 5px 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tab-button {
+    font-size: 14px; /* Smaller font size for smaller screens */
+    padding: 8px 15px; /* Adjust padding for smaller screens */
+  }
+
+  .tab-button:hover {
+    font-size: 15px; /* Slightly smaller hover effect for smaller screens */
+    padding: 5px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-button {
+    font-size: 12px; /* Even smaller font size for mobile devices */
+    padding: 6px 10px; /* Adjust padding for mobile devices */
+  }
+
+  .tab-button:hover {
+    font-size: 13px; /* Smaller hover effect for mobile devices */
+    padding: 4px 10px;
+  }
+}
+/* Visibility classes */
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.tab-selected {
+  background-color: rgba(38, 38, 38, 0.5);
+  color: whitesmoke;
+}
