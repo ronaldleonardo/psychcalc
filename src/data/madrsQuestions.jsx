@@ -16,12 +16,24 @@ export const madrsQuestions = {
           text: "Tidak tampak sedih",
         },
         {
+          score: 1,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 2,
           text: "Tampak kurang bersemangat namun dapat menjadi ceria kembali tanpa kesulitan",
         },
         {
+          score: 3,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 4,
           text: "Tampak sedih dan kurang bahagia hampir setiap saat",
+        },
+        {
+          score: 5,
+          text: "Perburukan kondisi",
         },
         {
           score: 6,
@@ -40,12 +52,24 @@ export const madrsQuestions = {
           text: "Kadang-kadang sedih saat menghadapi keadaan sekitar",
         },
         {
+          score: 1,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 2,
           text: "Rasa sedih atau kurang bersemangat namun dapat kembali ceria tanpa kesulitan",
         },
         {
+          score: 3,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 4,
           text: "Perasaan sedih atau murung yang terus-menerus. Suasana hati masih dipengaruhi oleh keadaan sekitar",
+        },
+        {
+          score: 5,
+          text: "Perburukan kondisi",
         },
         {
           score: 6,
@@ -64,12 +88,24 @@ export const madrsQuestions = {
           text: "Tenang. Hanya ketegangan batin sesaat",
         },
         {
+          score: 1,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 2,
           text: "Kadang-kadang muncul perasaan mudah tersinggung dan ketidaknyamanan yang samar-samar",
         },
         {
+          score: 3,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 4,
           text: "Ketegangan yang terus-menerus atau panik yang terkadang muncul yang dapat diatasi pasien meskipun ada kesulitan",
+        },
+        {
+          score: 5,
+          text: "Perburukan kondisi",
         },
         {
           score: 6,
@@ -88,12 +124,24 @@ export const madrsQuestions = {
           text: "Tidur seperti biasa",
         },
         {
+          score: 1,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 2,
           text: "Sedikit kesulitan untuk tertidur atau tidur yang sedikit berkurang, dangkal, atau sering terbangun",
         },
         {
+          score: 3,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 4,
           text: "Tidur berkurang atau terputus selama sedikitnya dua jam",
+        },
+        {
+          score: 5,
+          text: "Perburukan kondisi",
         },
         {
           score: 6,
@@ -112,12 +160,24 @@ export const madrsQuestions = {
           text: "Nafsu makan normal atau meningkat",
         },
         {
+          score: 1,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 2,
           text: "Nafsu makan sedikit berkurang",
         },
         {
+          score: 3,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 4,
           text: "Tidak ada nafsu makan. Makanan terasa hambar",
+        },
+        {
+          score: 5,
+          text: "Perburukan kondisi",
         },
         {
           score: 6,
@@ -136,12 +196,24 @@ export const madrsQuestions = {
           text: "Tidak ada kesulitan dalam berkonsentrasi",
         },
         {
+          score: 1,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 2,
           text: "Terkadang sulit menyatukan pikiran",
         },
         {
+          score: 3,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 4,
           text: "Kesulitan dalam berkonsentrasi dan mempertahankan pikiran, sehingga mengurangi kemampuan membaca atau mempertahankan pembicaraan",
+        },
+        {
+          score: 5,
+          text: "Perburukan kondisi",
         },
         {
           score: 6,
@@ -161,12 +233,24 @@ export const madrsQuestions = {
           text: "Hampir tidak ada kesulitan saat memulai sesuatu. Tidak lambat",
         },
         {
+          score: 1,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 2,
           text: "Kesulitan dalam memulai aktivitas-aktivitas",
         },
         {
+          score: 3,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 4,
           text: "Kesulitan dalam memulai aktivitas-aktivitas rutin sederhana, yang dilakukan dengan upaya besar",
+        },
+        {
+          score: 5,
+          text: "Perburukan kondisi",
         },
         {
           score: 6,
@@ -185,12 +269,24 @@ export const madrsQuestions = {
           text: "Minat normal terhadap lingkungan sekitar dan pada orang lain",
         },
         {
+          score: 1,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 2,
           text: "Berkurangnya kemampuan untuk menikmati minat sehari-hari",
         },
         {
+          score: 3,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 4,
           text: "Hilangnya minat terhadap lingkungan sekitar. Hilangnya perasaan terhadap teman dan kenalan-kenalan",
+        },
+        {
+          score: 5,
+          text: "Perburukan kondisi",
         },
         {
           score: 6,
@@ -209,12 +305,24 @@ export const madrsQuestions = {
           text: "Tidak ada pikiran pesimis",
         },
         {
+          score: 1,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 2,
           text: "Ide-ide tentang kegagalan yang berfluktuasi, atau menyalahkan diri sendiri, atau merasa diri kurang berharga",
         },
         {
+          score: 3,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 4,
           text: "Tuduhan terhadap diri sendiri yang menetap, atau gagasan-gagasan yang pasti tapi masih rasional tentang kesalahan atau dosa. Meningkatnya rasa pesimis tentang masa depan",
+        },
+        {
+          score: 5,
+          text: "Perburukan kondisi",
         },
         {
           score: 6,
@@ -233,12 +341,24 @@ export const madrsQuestions = {
           text: "Menikmati hidup atau menikmati apa adanya",
         },
         {
+          score: 1,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 2,
           text: "Bosan hidup. Hanya pikiran-pikiran bunuh diri sesaat",
         },
         {
+          score: 3,
+          text: "Perburukan kondisi",
+        },
+        {
           score: 4,
           text: "Mungkin lebih baik mati. Pikiran-pikiran bunuh diri sering terjadi dan bunuh diri dianggap sebagai solusi yang baik, namun tanpa perencanaan atau niat khusus",
+        },
+        {
+          score: 5,
+          text: "Perburukan kondisi",
         },
         {
           score: 6,
