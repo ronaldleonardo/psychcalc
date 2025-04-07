@@ -2,7 +2,7 @@
 export const ymrsQuestions = {
   icon: "🤯",
   colorScheme: {
-    primary: "#f8b72bc7", // Yellow Opacity
+    primary: "#f3b765", // Yellow Opacity
     secondary: "#ffae00", // Strong yellow
   },
   questions: [
