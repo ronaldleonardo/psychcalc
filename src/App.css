@@ -1,3 +1,29 @@
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.App {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+
+/* WebKit Browsers (Chrome, Safari, Opera) */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+.App::-webkit-scrollbar,
+.sidebar::-webkit-scrollbar,
+.results-history::-webkit-scrollbar,
+.results-history li::-webkit-scrollbar {
+  display: none;
+}
+
 /* src/App.css */
 
 html {
