@@ -29,6 +29,12 @@ const questionnaires = [
     description: "A questionnaire to assess the risk of suicide.",
     path: "/rbd",
   },
+  {
+    id: "ham-a",
+    title: "Hamilton Anxiety Scale",
+    description: "A questionnaire to assess the level of anxiety based on clinical questions.",
+    path: "/ham-a",
+  },
 
   // Add more questionnaires here
 ];

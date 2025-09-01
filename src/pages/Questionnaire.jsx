@@ -3,6 +3,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { ymrsQuestions } from "../data/ymrsQuestions";
 import { madrsQuestions } from "../data/madrsQuestions";
 import { rbdQuestions } from "../data/rbdQuestions";
+import { hamaQuestions } from "../data/hamaQuestions";
 import { getCurrentTime } from "../utils"; // Import the utility function
 import * as XLSX from "xlsx";
 import ConfirmationModal from "../components/ConfirmationModal"; // Import the modal component
@@ -14,6 +15,8 @@ const questionnaires = {
   ymrs: ymrsQuestions,
   madrs: madrsQuestions,
   rbd: rbdQuestions,
+  "ham-a": hamaQuestions,
+
   // Add more questionnaires here
 };
 
